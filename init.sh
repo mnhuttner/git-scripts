@@ -9,7 +9,7 @@ git config --global user.email 'mhuttner@gmail.com'
 git config --system core.editor vi
 
 git remote add origin git@github.com:mnhuttner/git-scripts
-git pull https://mnhuttner:Nojoker123@github.com/mnhuttner/git-scripts
+git pull https://mnhuttner:$PASSWORD@github.com/mnhuttner/git-scripts
 git push -u origin master
 
 git status
