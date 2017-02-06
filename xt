@@ -16,7 +16,5 @@ sub daemonize {
   chdir '/';
   print "Executing $cmd\n";
   exec($cmd);
-  #close STDIN;
-  #close STDOUT;
-  #close STDERR;
+  #close STDIN; #close STDOUT; #close STDERR;
 }
