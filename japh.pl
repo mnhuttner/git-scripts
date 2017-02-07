@@ -20,3 +20,4 @@ sea          `"\`;-.}_ _ _.;\ \/ \'=._\
 sea+=$sea{$_}if$.=~/[$_]/}keys%sea;$,.=$"if/\^/}spli
 t//;$,.=chr$sea;die"$,$/"if/~/;}split/[,']/,$sea>;$_
 =$sea;s;[^%]+%;%;s;s;\s+[`\\].*|\s+;;g;eval;print$@;
+system("cat $0|grep -v system");
