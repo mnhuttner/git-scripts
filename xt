@@ -4,6 +4,7 @@ use strict;
 use POSIX;
 my $fg = shift || "yellow";
 my $cmd = "xterm -fg $fg -bg black -sb -fn 10x20";
+
 daemonize($cmd);
 
 sub daemonize {
@@ -16,7 +17,5 @@ sub daemonize {
   chdir '/';
   print "Executing $cmd\n";
   exec($cmd);
-  #close STDIN;
-  #close STDOUT;
-  #close STDERR;
+  #close STDIN; #close STDOUT; #close STDERR;
 }
