@@ -3,7 +3,9 @@
 
 set -o vi
 export PATH=.:$PATH
-#alias ag='apt-get -y install '
+echo PATH=$PATH
+alias ag='apt-get -y install '
+alias ii="ip addr|grep 'inet '|grep -v 127"
 export EDITOR=vi
 # no dup lines in hist, force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
