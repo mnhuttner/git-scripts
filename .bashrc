@@ -3,7 +3,6 @@
 
 set -o vi
 export PATH=.:$PATH
-echo PATH=$PATH
 alias ag='apt-get -y install '
 alias ii="ip addr|grep 'inet '|grep -v 127"
 export EDITOR=vi
@@ -23,7 +22,7 @@ case "$TERM" in
     xterm-color) color_prompt=yes;;
 esac
 
-#force_color_prompt=yes
+force_color_prompt=yes
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
 	# We have color support; assume it's compliant with Ecma-48
